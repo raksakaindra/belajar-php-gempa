@@ -1,0 +1,276 @@
+/*
+	30 Gempa Dirasakan BMKG
+	© 2019 — Handcode by Raksaka Indra
+ */
+
+.head, .head-menu, .footer-menu {
+	background: #1d1e22;
+	color: #fff;
+}
+.head-menu {
+	font-size: 16px;
+	font-weight: 500;
+	padding: 10px;
+	text-align: center;
+}
+.head {
+	padding: 20px;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	display: none;
+}
+.head a {
+	position: absolute;
+	top: 30px;
+}
+.head h1 {
+	font-size: 28px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0;
+	line-height: 16px;
+}
+.logo {
+	background-image: url('img/logo-bmkg-white.svg');
+	background-repeat: no-repeat;
+	background-size: 36px auto;
+	background-position: center center;
+	width: 40px;
+	height: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+}
+.logo.little {
+	background-size: 28px auto;
+	width: 30px;
+	height: 40px;
+	margin-right: 8px;
+}
+.side-nav a {
+	padding: 0 12px;
+	height: inherit;
+	position: relative;
+}
+.side-nav a:focus {
+    background-color: rgba(0,0,0,0.05);
+}
+.side-nav li {
+	border-bottom: 1px solid #eee;
+}
+.side-nav li .mag {
+	font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.side-nav li p {
+	font-weight: 400;
+	color: #777;
+	line-height: 18px;
+	margin: 0 0 0 60px;
+	padding: 5px 0;
+}
+.side-nav li em {
+	background: purple;
+	font-style: normal;
+	color: #fff;
+	position: absolute;
+	right: 12px;
+	padding: 1px 4px;
+	border-radius: 5px;
+}
+.side-nav li p.tgl {
+	font-size: 13px;
+	padding-top: 15px;
+}
+.side-nav li p.lok {
+	padding-bottom: 15px;
+	color: #333;
+}
+#container {
+  padding-left: 300px;
+}
+.gempa_green {
+	color: #359b0a;
+}
+.gempa_orange {
+	color: #ff9800;
+}
+.gempa_red {
+	color: #ff185a;
+}
+.footer-menu {
+	font-size: 14px;
+	padding: 5px 10px;
+	line-height: 32px !important;
+	text-align: center;
+}
+
+/* Peta Leaflet */
+#map {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+/*.leaflet-control-container {
+	display: none;
+}
+.leaflet-popup-content {
+	text-align: center;
+	margin: 7px 20px 7px 12px !important;
+}
+.leaflet-popup-content p {
+	margin: 0;
+}*/
+
+/* Dahsboard Admin */
+.login {
+	background: #1d1e22;
+}
+.login img {
+	margin: 30px auto;
+	margin-top: 100px;
+	display: block;
+}
+.login-form {
+	background: #efefef;
+	width: 30%;
+	min-width: 450px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+i.btn {
+	margin: 10px;
+}
+.admin {
+	padding: 20px 50px !important;
+}
+.admin h1, .login h1 {
+	font-size: 28px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 16px;
+}
+.welcome {
+	padding: 0 12px;
+	color: purple;
+    font-size: 14px;
+    font-weight: 500;
+}
+table {
+	margin-top: 20px;
+}
+th, td {
+	text-align: center;
+	border-right: 1px solid #d0d0d0;
+	padding: 10px;
+}
+th {
+	background: #1d1e22;
+	color: #fff;
+	border-radius: 0;
+	padding: 15px 10px;
+}
+th:last-child, td:last-child {
+	border-right: none;
+}
+td:nth-child(2) {
+	width: 120px;
+}
+td:nth-child(5), td:nth-child(7) {
+	text-align: left;
+	width: 200px;
+}
+td:nth-child(6) {
+	width: 170px;
+}
+.user td:nth-child(5) {
+	text-align: center;
+}
+.admin table span {
+	color: #fff;
+    padding: 4px 7px;
+    border-radius: 5px;
+}
+.admin table .gempa_green {
+	background: #359b0a;
+}
+.admin table .gempa_orange {
+	background: #ff9800;
+}
+.admin table .gempa_red {
+	background: #ff185a;
+}
+.admin table .ked {
+	background: purple;
+}
+.input-field input {
+	margin: 0 0 8px 0;
+}
+.input-field .helper-text {
+    position: relative;
+    min-height: 18px;
+    display: block;
+    font-size: 12px;
+    color: rgba(0,0,0,0.54);
+}
+input[type="submit"] {
+	padding: 10px 0;
+}
+input[name="update"], input[name="updateuser"] {
+	margin-top: 10px;
+	margin-left: 10px;
+	line-height: 16px;
+	padding: 10px 20px;
+}
+.orange.btn {
+	margin-bottom: 8px;
+}
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin: 10px 0;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Media Queries */
+@media only screen and (max-width : 992px) {
+	#container {
+		padding-left: 0px;
+	}
+	.head {
+		display: block;
+	}
+	.admin {
+		margin-top: 70px;
+	}
+	th {
+		padding: 10px;
+	}
+	th, td {
+		border: none;
+	}
+	td:nth-child(2), td:nth-child(5), td:nth-child(6), td:nth-child(7) {
+		width: inherit;
+	}
+
+}
+@media only screen and (max-width : 576px) {
+	.head h1 {
+		font-size: 22px;
+	}
+}
