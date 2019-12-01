@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 25, 2019 at 08:23 AM
+-- Generation Time: Dec 01, 2019 at 04:55 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.8
 
@@ -95,9 +95,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `nama`, `password`, `status`) VALUES
-(1, 'saka', 'Raksaka Indra A', '3715517c74ddeede3ad8104acf84d5e4', 1),
-(2, 'john', 'John Appleseed', '3715517c74ddeede3ad8104acf84d5e4', 2),
-(6, 'raksaka', 'Raksaka', '3715517c74ddeede3ad8104acf84d5e4', 2);
+(1, 'saka', 'Raksaka Indra A', 'e106be5ee06d8e289594db38f4fca875', 1),
+(2, 'john', 'John Appleseed', 'bdeec97c9c02ffdb1eb7f272b0afc61d', 2);
 
 --
 -- Indexes for dumped tables
